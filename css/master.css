@@ -15,3 +15,7 @@ a, a:link, a:visited {
 a:hover {
   color: inherit;
 }
+
+#padding {
+  padding: ($spacer * .5) !important;
+}

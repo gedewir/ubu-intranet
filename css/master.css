@@ -2,3 +2,16 @@
   widows: 100px;
   height: 100px;
 }
+
+.navbar-brand {
+  text-align: center;
+}
+
+a, a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+}

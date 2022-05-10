@@ -1,0 +1,4 @@
+website,url,image
+Azure,https://portal.azure.com/#home,./images/azure.svg.png
+Github,https://github.com/,./images/github.png
+AWS,,

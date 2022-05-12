@@ -1,11 +1,12 @@
-var date = new Date()
-var dateHour = date.getHours()
+var date = new Date();
+var dateHour = date.getHours();
+var dateMin = date.getMinutes();
 var time;
 
 if (dateHour > 12) {
-  time = (dateHour - 12) + 'PM';
+  time = (dateHour - 12) + ':' + dateMin + 'PM';
 } else if (dateHour < 12) {
-  time = dateHour + 'AM';
+  time = dateHour + ':' + dateMin + 'AM';
 };
 
 var text = ('The time is currently: ' + time)

@@ -17,5 +17,4 @@ d3.csv("admin.csv", function(data) {
 
 function print1() {
   createBox(dataset.website, dataset.url, dataset.image);
-
                   };

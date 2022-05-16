@@ -3969,6 +3969,9 @@ tbody.collapse.show {
   justify-content: center;
   width: 100%;
   left: 0;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {

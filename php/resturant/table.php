@@ -1,4 +1,5 @@
 <?php
+//include script connection to MySQL DB
 include("resturant-connect.php");
 
 $result = $conn->query("SELECT * FROM Resturants") or die(mysql_error());

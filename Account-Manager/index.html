@@ -17,10 +17,19 @@
 </nav>
 <div class="container">
 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-search-user" role="tab" aria-controls="nav-home" aria-selected="true">Search User</a>
+  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-departments" role="tab" aria-controls="nav-home" aria-selected="true">Departments</a>
+  <a class="nav-item nav-link" id="nav-search-user-tab" data-toggle="tab" href="#nav-search-user" role="tab" aria-controls="nav-home" aria-selected="true">Search User</a>
 </div>
 <div class="tab-content" id="nav-tabContent">
-  <div class="tab-pane fade show active" id="nav-search user" role="tabpanel" aria-labelledby="nav-home-tab">
+  <div class="tab-pane fade show active" id="nav-departments" role="tabpanel" aria-labelledby="nav-home-tab">
+  <div class="container">
+    <h1>Departments</h1>
+    <?php
+    include "../php/ldap/ldap-departments.php";
+    ?>
+  </div>
+  </div>
+  <div class="tab-pane fade" id="nav-search-user" role="tabpanel" aria-labelledby="nav-contact-tab">
     <div class="container">
       <h1>Search User</h1>
       <form action="Search-Result/" method="post">
@@ -29,6 +38,14 @@
         </div>
         <div class="form-row">
           <input type="text" name="lname" placeholder="Last Name" >
+        </div>
+        <div class="form-row">
+          <select name="department" id="">
+            <option value="">Accounting</option>
+            <option value="">I.T</option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
         </div>
         <div class="form-row">
           <input type="submit" value="Submit">

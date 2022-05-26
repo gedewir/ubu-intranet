@@ -8,14 +8,19 @@
   //arguements inside ldap_search()
   $tree = "CN=Users,DC=gedewirayuda,DC=me";
   $filter = "(CN=". $fname . " " . $lname . ")";
-  $attributes = array('sn');
+  $attributes = array();
 
   //
   $result = ldap_search($ldapconn, $tree, $filter, $attributes);
   $entries = ldap_get_entries($ldapconn, $result);
-  
-  print "<pre>";
-  print_r ($entries);
-  print "</pre>";
+
+  if ($entries['count'] == 1 ){
+    echo "<pre>";
+    print_r ($entries);
+    echo "</pre>";
+  } else {
+    echo "sowy this is not a person :(";
+  }
+
 
  ?>

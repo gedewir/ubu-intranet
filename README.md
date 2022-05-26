@@ -1,1 +1,1 @@
-![Webpage](/images/ubu-intranet.png)
+![Webpage](./images/ubu-intranet.png)
